@@ -1,0 +1,24 @@
+### GET All Passwords
+
+GET http://localhost:8080/pass
+Authorization: Bearer COLE_SEU_TOKEN_AQUI
+
+### POST Login
+
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "username": "joao",
+  "password": "123456"
+}
+
+### POST Login Maria
+
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "username": "maria",
+  "password": "123456"
+}
