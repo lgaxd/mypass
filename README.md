@@ -1,6 +1,6 @@
 # MyPass - Projeto Java Advanced - 2TDSPX
 
-- Feito por: Lucas Grillo Alcântara - RM561413
+* Feito por: Lucas Grillo Alcântara - RM561413
 
 ## Configuração
 
@@ -32,3 +32,17 @@ Content-Type: application/json
   "username": "joao",
   "password": "123456"
 }
+```
+
+O endpoint retornará um token JWT. Utilize o token retornado para autenticar as requisições ao endpoint de senhas:
+
+```http
+GET http://localhost:8080/pass
+Authorization: Bearer SEU_TOKEN_AQUI
+```
+
+### Teste da Aplicação
+
+Abaixo está uma captura de tela demonstrando o teste da aplicação e o funcionamento dos endpoints:
+
+![Teste da aplicação](Teste-Front.png)
